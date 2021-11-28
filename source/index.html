@@ -17,7 +17,7 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" hidden="true">
+        <button class="main-nav__toggle" type="button" hidden>
           <span class="page__hidden">Открыть или закрыть меню.</span>
         </button>
         <ul class="main-nav__list">
@@ -114,12 +114,12 @@
                 <img class="compare__image range__image-after" src="#" width="243" height="232" alt="Похудевший кот Борис">
               </div>
             </figure>
-            <div class="compare__range-scale range__scale">
+            <div class="compare__range-bar range__bar">
               <button class="compare__range-button range__button" type="button">Было</button>
-              <div class="compare__range-bar range__bar"> <!--Прописать стили для полосы выбора диапазона-->
-                <button class="compare__range-toggle range__toggle" type="button" hidden="true">
+              <div class="compare__range-scale range__scale"> <!--Прописать стили для полосы выбора диапазона-->
+                <div class="compare__range-thumb range__thumb" type="button" hidden>
                   <span class="page__hidden">Сравнить котов в разных состояниях, до и после.</span>
-                </button>
+                </div>
               </div>
               <button class="compare__range-button range__button" type="button">Стало</button>
             </div>
@@ -169,9 +169,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <span class="page__hidden">Логотип HTMLAcademy</span>
-          </a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
