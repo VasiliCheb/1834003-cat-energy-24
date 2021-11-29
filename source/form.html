@@ -17,7 +17,7 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" hidden="true">
+        <button class="main-nav__toggle" type="button" hidden>
           <span class="page__hidden">Открыть или закрыть меню.</span>
         </button>
         <ul class="main-nav__list">
@@ -68,21 +68,18 @@
               <li class="form-radio__item slimming">
                 <label class="form-radio__label">
                   <input class="form-radio__input page__hidden" type="radio" name="goal" value="slimming-cat" checked>
-                  <span class="form-radio__control-mark"></span>
                   <span class="form-radio__control-label">Похудение</span>
                 </label>
               </li>
               <li class="form-radio__item mass">
                 <label class="form-radio__label">
                   <input class="form-radio__input page__hidden" type="radio" name="goal" value="mass-cat">
-                  <span class="form-radio__control-mark"></span>
                   <span class="form-radio__control-label">Набор массы</span>
                 </label>
               </li>
               <li class="form-radio__item advise">
                 <label class="form-radio__label">
                   <input class="form-radio__input page__hidden" type="radio" name="goal" value="nutritional-advice">
-                  <span class="form-radio__control-mark"></span>
                   <span class="form-radio__control-label">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
@@ -106,41 +103,37 @@
                 </label>
               </li>
             </ul>
+          </fieldset>
 
-          </fieldset>
-          <fieldset class="form-commentary">
-            <legend class="form-commentary__legend">Комментарий</legend>
-            <textarea class="form-commentary__field" name="commentary" rows="5" cols="35">Расскажите обо всех повадках кота</textarea>
-          </fieldset>
+          <div class="form-commentary">
+            <label class="form-commentary__label" for="commentary">Комментарий</label>
+            <textarea class="form-commentary__field" id="commentary" name="commentary" rows="5" cols="35">Расскажите обо всех повадках кота</textarea>
+          </div>
 
           <fieldset class="form-checkbox">
             <legend class="form-checkbox__legend">Дополнительно</legend>
             <ul class="form-checkbox__list">
               <li class="form-checkbox__item sweetener">
                 <label class="form-checkbox__label">
-                  <input class="form-checkbox__control-input page__hidden" type="checkbox" name="sweetener" checked>
-                  <span class="form-checkbox__control-mark"></span>
+                  <input class="form-checkbox__control-input page__hidden" type="checkbox" name="additional" value="sweetener" checked>
                   <span class="form-checkbox__control-label">Cахарозаменитель</span>
                 </label>
               </li>
               <li class="form-checkbox__item water">
                 <label class="form-checkbox__label">
-                  <input class="form-checkbox__control-input page__hidden" type="checkbox" name="water">
-                  <span class="form-checkbox__control-mark"></span>
+                  <input class="form-checkbox__control-input page__hidden" type="checkbox" name="additional" value="water">
                   <span class="form-checkbox__control-label">Питьевая вода</span>
                 </label>
               </li>
               <li class="form-checkbox__item milk">
                 <label class="form-checkbox__label">
-                  <input class="form-checkbox__control-input page__hidden" type="checkbox" name="milk">
-                  <span class="form-checkbox__control-mark"></span>
+                  <input class="form-checkbox__control-input page__hidden" type="checkbox" name="additional" value="milk">
                   <span class="form-checkbox__control-label">Молоко</span>
                 </label>
               </li>
               <li class="form-checkbox__item vitamins">
                 <label class="form-checkbox__label">
-                  <input class="form-checkbox__control-input page__hidden" type="checkbox" name="vitamins">
-                  <span class="form-checkbox__control-mark"></span>
+                  <input class="form-checkbox__control-input page__hidden" type="checkbox" name="additional" value="vitamins">
                   <span class="form-checkbox__control-label">Витамины</span>
                 </label>
               </li>
@@ -164,7 +157,7 @@
           </address>
         </div>
         <div class="page-footer__location location">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1638037165046!5m2!1sru!2sby" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">Карта местности. Расположение локации на местности.</iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1638037165046!5m2!1sru!2sby" width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
           <noscript>
             <img class="location__noscript-image" src="img/index-location.png" width="320" height="362" alt="Карта местности. Расположение локации на местности.">
           </noscript>
