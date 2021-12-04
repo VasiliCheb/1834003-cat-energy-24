@@ -1,0 +1,33 @@
+.selection {
+  font-family: var(--accent-font);
+  color: var(--white);
+  padding: 0 20px;
+  margin-bottom: 20px;
+  background-image:
+    linear-gradient(to bottom, var(--green_background), var(--green_background)),
+    url("../img/index-background-cat.jpg");
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+}
+
+.selection__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.selection__slogan {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: rgb(238, 130, 189);
+}
+
+.selection__button-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+}
