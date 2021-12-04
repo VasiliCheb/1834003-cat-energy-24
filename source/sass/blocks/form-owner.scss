@@ -1,0 +1,36 @@
+.form-owner {
+  border: none;
+  padding: 20px;
+}
+
+.form-owner__legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--black);
+  padding: 0;
+}
+
+.form-owner__list {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--grey-dark);
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-owner__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.form-owner__field {
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--grey-dark);
+  text-transform: uppercase;
+}
