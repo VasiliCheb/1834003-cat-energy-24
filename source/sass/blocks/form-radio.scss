@@ -1,1 +1,21 @@
-// надо что то написать
+.form-radio {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--grey-dark-special);
+  text-transform: uppercase;
+  border: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.form-radio__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-radio__item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}

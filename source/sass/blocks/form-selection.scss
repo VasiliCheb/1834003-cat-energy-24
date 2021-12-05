@@ -1,1 +1,36 @@
-// надо что то написать
+.form-selection {
+  font-family: var(--accent-font);
+  font-weight: 400;
+}
+
+.form-selection__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: var(--black);
+  padding-top: 27px;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.form-selection__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black);
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.form-selection__attention {
+  display: block;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--black);
+  padding: 0 20px;
+  margin-bottom: 32px;
+}

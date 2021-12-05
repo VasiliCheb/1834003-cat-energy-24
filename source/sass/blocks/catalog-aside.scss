@@ -1,1 +1,17 @@
-// надо что то написать
+.catalog-aside {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--white);
+  background-image:
+    linear-gradient(to bottom, var(--green_background), var(--green_background)),
+    url("../../img/catalog-background-cat.jpg");
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+  margin: 20px;
+}
+
+.catalog-aside__description {
+  padding-top: 187px;
+  padding-bottom: 43px;
+}

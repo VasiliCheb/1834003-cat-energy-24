@@ -1,1 +1,33 @@
-// надо что то написать
+.product-add__title {
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-add__link {
+  color: var(--grey-dark-special);
+  text-decoration: none;
+}
+
+.product-add__quantity,
+.product-add__price {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: var(--grey-dark);
+  margin: 0;
+}
+
+.product-add__price {
+  text-transform: uppercase;
+}
+
+.product-add__order {
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 12px;
+  margin-left: 0;
+}

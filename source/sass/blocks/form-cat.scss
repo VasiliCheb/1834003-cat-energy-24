@@ -1,1 +1,30 @@
-// надо что то написать
+.form-cat {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--grey-dark);
+  text-transform: uppercase;
+  border: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.form-cat__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-cat__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.form-cat__field {
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--grey-dark);
+  text-transform: uppercase;
+}

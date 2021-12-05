@@ -5,7 +5,7 @@
   margin-bottom: 20px;
   background-image:
     linear-gradient(to bottom, var(--green_background), var(--green_background)),
-    url("../img/index-background-cat.jpg");
+    url("../../img/index-background-cat.jpg");
   background-size: 320px 302px;
   background-repeat: no-repeat;
 }
@@ -23,11 +23,11 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  /*Временный фон, что бы не потерять белое на белом*/
   background-color: rgb(238, 130, 189);
 }
 
 .selection__button-link {
   font-size: 14px;
   line-height: 18px;
-  color: var(--white);
 }

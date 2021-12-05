@@ -8,11 +8,11 @@
 .advantages__list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages__item {
   background-color: var(--grey-basic_background);
-  list-style-type: none;
   padding: 20px;
 
   &:not(:last-child) {

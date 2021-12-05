@@ -4,7 +4,9 @@
   width: fit-content;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #68b738;
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
 
   &--size_wide {
     width: 100%;

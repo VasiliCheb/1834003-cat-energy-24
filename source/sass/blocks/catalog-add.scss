@@ -1,1 +1,21 @@
-// надо что то написать
+.catalog-add__card {
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.catalog-add__list {
+  padding: 20px;
+}
+
+.catalog-add__title {
+  font-family: var(--accent-font);
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
