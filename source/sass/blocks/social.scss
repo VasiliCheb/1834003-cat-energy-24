@@ -1,1 +1,9 @@
-// надо что то написать
+.social__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  padding: 10px;
+}

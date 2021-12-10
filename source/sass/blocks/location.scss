@@ -1,1 +1,17 @@
-// надо что то написать
+.location__noscript-image {
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 362px;
+
+  @media (--middle-vp) {
+    height: 400px;
+  }
+
+  @media (--wide-vp) {
+    max-width: 1440px;
+    height: 400px;
+    margin: 0 auto;
+  }
+}

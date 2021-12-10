@@ -4,8 +4,12 @@
 }
 
 .page__body {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
   min-height: 100%;
+  margin: 0;
   background-color: var(--white);
 }
 
@@ -18,4 +22,17 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page__wrapper_center {
+  margin: 0 20px;
+
+  @media (--middle-vp) {
+    margin: 0 30px;
+  }
+
+  @media (--wide-vp) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

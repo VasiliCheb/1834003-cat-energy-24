@@ -6,13 +6,41 @@
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-align: center;
+
+  @media (--not-small-vp) {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (--wide-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__item {
+  padding: 10px 0;
+
+  @media (--not-small-vp) {
+    padding: 10px;
+  }
 }
 
 .main-nav__link {
   color: var(--black);
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (--wide-vp) {
+    color: var(--white);
+  }
 }

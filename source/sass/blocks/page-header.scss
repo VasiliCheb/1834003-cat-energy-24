@@ -1,9 +1,23 @@
 .page-header {
-  padding: 10px 20px 17px 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (--not-small-vp) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 15px 0;
+  }
+
+  @media (--wide-vp) {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0;
+  }
 }
 
-.page-header__logo-image {
-  margin-right: 57px;
+.page-header__wrapper-logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 .page-header__logo-link {
