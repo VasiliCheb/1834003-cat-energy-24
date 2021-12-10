@@ -1,3 +1,21 @@
+.contacts {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--white);
+  padding: 26px 20px;
+
+  @media (--middle-vp) {
+    padding: 56px 70px;
+  }
+
+  @media (--wide-vp) {
+    max-width: 565px;
+    max-height: 198px;
+    padding: 56px 80px;
+  }
+}
+
 .contacts__cooperation {
   font-style: normal;
   font-family: var(--accent-font);
