@@ -2,8 +2,20 @@
   color: var(--grey-dark);
   font-size: 14px;
   line-height: 18px;
-  padding: 20px;
+  padding: 20px 0;
   background-color: var(--grey_background);
+
+  @media (--not-small-vp) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.compare__wrapper_grid {
+  @media (--wide-vp) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .compare__title {
@@ -15,12 +27,64 @@
   padding-top: 5px;
   margin-top: 0;
   margin-bottom: 40px;
+
+  @media (--not-small-vp) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (--wide-vp) {
+    grid-column: 1 / 2;
+  }
+}
+
+.compare__description {
+  @media (--wide-vp) {
+    grid-column: 1 / 2;
+  }
+}
+
+.compare__container-list {
+  @media (--not-small-vp) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (--wide-vp) {
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-column: 1 / 2;
+  }
+}
+
+.compare__effect-list {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media (--wide-vp) {
+    justify-content: flex-start;
+  }
+}
+
+.compare__effect-frame {
+  display: flex;
+  flex-direction: column;
+
+  @media (--wide-vp) {
+    justify-content: flex-start;
+  }
 }
 
 .compare__effect-term {
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+  order: 2;
+
+  @media (--not-small-vp) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .compare__effect-definition {
@@ -30,15 +94,39 @@
   font-weight: 400;
   color: var(--black);
   text-transform: uppercase;
+
+  @media (--not-small-vp) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .compare__expenses-list {
+  display: flex;
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: var(--black);
   text-transform: uppercase;
+  justify-content: center;
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media (--wide-vp) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.compare__range {
+  @media (--wide-vp) {
+    grid-column: 2 / -1;
+  }
 }
 
 .compare__range-button {
@@ -50,4 +138,10 @@
   text-transform: uppercase;
   border: none;
   background-color: var(--transparent);
+}
+
+.compare__image {
+  display: block;
+  padding-top: 40px;
+  margin: 0 auto;
 }

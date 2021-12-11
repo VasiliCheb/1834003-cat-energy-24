@@ -13,7 +13,7 @@
   list-style-type: none;
   text-align: center;
 
-  @media (--middle-vp) {
+  @media (--not-small-vp) {
     flex-direction: row;
     justify-content: space-between;
     font-size: 18px;
@@ -22,22 +22,15 @@
   }
 
   @media (--wide-vp) {
-    flex-direction: row;
-    justify-content: space-evenly;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 400;
   }
 }
 
 .main-nav__item {
   padding: 10px 0;
 
-  @media (--middle-vp) {
-    padding: 10px;
-  }
-
-  @media (--wide-vp) {
+  @media (--not-small-vp) {
     padding: 10px;
   }
 }

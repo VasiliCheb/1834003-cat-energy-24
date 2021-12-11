@@ -2,7 +2,12 @@
   color: var(--grey-dark);
   font-size: 14px;
   line-height: 18px;
-  padding: 20px;
+  padding: 20px 0;
+
+  @media (--not-small-vp) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .technologies__title {
@@ -13,12 +18,24 @@
   color: var(--black);
   margin-top: 0;
   margin-bottom: 40px;
+
+  @media (--not-small-vp) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .technologies__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (--not-small-vp) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .technologies__item {
@@ -26,5 +43,14 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (--not-small-vp) {
+    width: 50%;
+    min-height: 280px;
+  }
+
+  @media (--wide-vp) {
+    width: 25%;
   }
 }
