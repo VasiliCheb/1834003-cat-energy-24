@@ -13,10 +13,6 @@
   background-color: var(--white);
 }
 
-.page-main {
-  flex-grow: 1;
-}
-
 .page__hidden {
   position: absolute;
   width: 1px;
@@ -36,6 +32,7 @@
   }
 
   @media (--wide-vp) {
+    width: 1220px;
     margin: 0 auto;
   }
 }

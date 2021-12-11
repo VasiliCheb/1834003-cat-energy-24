@@ -45,8 +45,9 @@
   }
 
   @media (--wide-vp) {
-    width: 100%;
-    max-width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
 }
 
@@ -62,15 +63,15 @@
     font-size: 60px;
     line-height: 60px;
     color: var(--black);
-    grid-column: 1 /-1;
+    grid-column: 1 / 2;
     grid-row: 1 / -1;
     margin-left: 87px;
   }
 
   @media (--wide-vp) {
-    font-size: 60px;
-    line-height: 60px;
-    color: var(--black);
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    margin: 0;
   }
 }
 
@@ -86,16 +87,16 @@
     font-size: 20px;
     line-height: 20px;
     color: var(--black);
-    grid-column: 1 /-1;
+    grid-column: 1 / 2;
     grid-row: 1 / -1;
     margin-top: 180px;
     margin-left: 87px;
   }
 
   @media (--wide-vp) {
-    font-size: 20px;
-    line-height: 20px;
-    color: var(--black);
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
   }
 }
 
@@ -107,7 +108,7 @@
   @media (--middle-vp) {
     width: 709px;
     height: 609px;
-    grid-column: 1 /-1;
+    grid-column: 1 / 2;
     grid-row: 1 / -1;
     z-index: -1;
     margin-top: 220px;
@@ -117,6 +118,8 @@
   @media (--wide-vp) {
     width: 552px;
     height: 499px;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
   }
 }
 
@@ -135,5 +138,12 @@
     grid-row: 1 / -1;
     margin-top: 250px;
     margin-left: 87px;
+  }
+
+  @media (--wide-vp) {
+    width: 552px;
+    height: 499px;
+    grid-column: 1 /-1;
+    grid-row: 1 / -1;
   }
 }
