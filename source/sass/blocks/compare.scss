@@ -8,6 +8,7 @@
   @media (--not-small-vp) {
     font-size: 16px;
     line-height: 24px;
+    background-image: linear-gradient(to bottom, var(--white) 57%, var(--transparent) 43%);
   }
 }
 

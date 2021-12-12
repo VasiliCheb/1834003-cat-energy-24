@@ -4,7 +4,16 @@
   color: var(--grey-dark);
   text-transform: uppercase;
   border: none;
-  padding: 20px;
+  padding: 20px 0;
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (--wide-vp) {
+    grid-column: 1 / 2;
+  }
 }
 
 .form-cat__list {
@@ -26,4 +35,14 @@
   font-weight: 400;
   color: var(--grey-dark);
   text-transform: uppercase;
+  flex-grow: 1;
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-cat__label {
+  display: flex;
 }

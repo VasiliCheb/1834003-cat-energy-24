@@ -1,16 +1,30 @@
 .form-checkbox {
   border: none;
-  padding: 20px;
+  padding: 20px 0;
+
+  @media (--wide-vp) {
+    grid-column: 1 / -1;
+  }
 }
 
 .form-checkbox__legend {
+  display: block;
   font-size: 24px;
   line-height: 26px;
   color: var(--black);
   padding: 0;
+  margin-bottom: 34px;
+
+  @media (--not-small-vp) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
 }
 
 .form-checkbox__list {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   line-height: 18px;
   color: var(--black);
@@ -18,10 +32,25 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form-checkbox__item {
   &:not(:last-child) {
     margin-bottom: 12px;
+  }
+
+  @media (--not-small-vp) {
+    width: 50%;
+  }
+
+  @media (--wide-vp) {
+    width: 25%;
   }
 }

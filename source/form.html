@@ -10,7 +10,7 @@
 
   <main class="page-main form-main">
     <h1 class="page__hidden">Форма подбора индивидуалной программы питания от «Кэт энерджи».</h1>
-    <section class="form-selection">
+    <section class="form-selection page__wrapper_center">
       <h2 class="form-selection__title">Подбор программы</h2>
       <p class="form-selection__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <form class="form-selection__list form" action="https://echo.htmlacademy.ru/" method="get">
@@ -113,10 +113,13 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button form__button" type="submit">Отправить заявку</button>
+
+        <div class="form-selection__dispatch-set">
+          <button class="button form__button" type="submit">Отправить заявку</button>
+          <strong class="form-selection__attention">* — Обязательные поля</strong>
+        </div>
       </form>
 
-      <strong class="form-selection__attention">* — Обязательные поля</strong>
     </section>
 
   </main>

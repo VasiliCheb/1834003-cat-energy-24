@@ -1,5 +1,25 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+
+  @media (--not-small-vp) {
+    background-color: var(--grey-basic_background);
+    text-align: center;
+    padding: 39px;
+  }
+}
+
 .product__link {
   text-decoration: none;
+}
+
+.product__link--title {
+  grid-column: 2 / -1;
+
+  @media (--not-small-vp) {
+    grid-column: 1 / -1;
+  }
 }
 
 .product__title {
@@ -10,37 +30,92 @@
   color: var(--grey-dark-special);
   text-transform: uppercase;
   margin: 0;
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.product__link--image {
+  grid-column: 1 / -2;
+
+  @media (--not-small-vp) {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+}
+
+.product__specification {
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--grey-dark);
+  margin: 0;
+
+  @media (--not-small-vp) {
+    grid-column: 1 / -1;
+    font-size: 16px;
+  }
+}
+
+.product__term {
+  grid-column: 1 / 2;
+}
+
+.product__definition {
+  grid-column: 2 / -1;
+  margin: 0;
+}
+
+.product--more {
+  @media (--not-small-vp) {
+    background-color: var(--white);
+  }
+}
+
+.product__link--more {
+  grid-column: 1 /-1;
+  margin: 0 auto;
 }
 
 .product__title--more {
   color: var(--black-light);
   margin-bottom: 8px;
-}
 
-.product__specification {
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  color: var(--grey-dark);
-  margin: 0;
+  @media (--not-small-vp) {
+    line-height: 22px;
+  }
 }
 
 .product__description--more {
+  grid-column: 1 /-1;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   color: var(--grey-dark);
-  margin-top: 0;
-  margin-bottom: 21px;
-}
+  margin: 0 auto 21px;
 
-.product__definition {
-  margin: 0;
+  @media (--not-small-vp) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .product__button {
+  display: grid;
+  grid-column: 1 / -1;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
+  place-items: center;
+
+  @media (--not-small-vp) {
+    grid-column: 1 / -1;
+  }
 }
 
 .product__button--more_color {

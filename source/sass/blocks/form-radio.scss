@@ -4,7 +4,16 @@
   color: var(--grey-dark-special);
   text-transform: uppercase;
   border: none;
-  padding: 20px;
+  padding: 20px 0;
+
+  @media (--not-small-vp) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (--wide-vp) {
+    grid-column: 2 / -1;
+  }
 }
 
 .form-radio__list {
