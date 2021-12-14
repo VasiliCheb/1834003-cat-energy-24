@@ -1,8 +1,26 @@
 .main-nav {
+  position: relative;
   font-family: var(--accent-font);
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+
+  &--within_index {
+    --link-color: var(--white);
+
+    @media (--wide-vp) {
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--green_background);
+      }
+    }
+  }
 }
 
 .main-nav__list {
@@ -41,6 +59,6 @@
   text-transform: uppercase;
 
   @media (--wide-vp) {
-    color: var(--white);
+    color: var(--link-color, var(--black));
   }
 }

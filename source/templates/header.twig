@@ -1,13 +1,13 @@
 <header class="page-header page__wrapper_center">
   <div class="page-header__wrapper-logo">
-    <a class="page-header__logo-link" href="index.html">
+    <a class="page-header__logo-link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
       <img class="page-header__logo-image" src="img/index-logo.svg" width="33" height="38" alt="Логотип «Кэт энерджи».">
     </a>
-    <a class="page-header__logo-link" href="index.html">
+    <a class="page-header__logo-link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
       <img class="page-header__logo-title" src="img/index-logo-title.svg" width="101" height="18" alt="Заглавие логотипа «Кэт энерджи».">
     </a>
   </div>
-  <nav class="main-nav">
+  <nav class="main-nav {% if permalink == "index.html" %}main-nav--within_index{% endif %}">
     <button class="main-nav__toggle" type="button" hidden>
       <span class="page__hidden">Открыть или закрыть меню.</span>
     </button>

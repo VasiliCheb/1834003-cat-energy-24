@@ -2,8 +2,11 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--white);
   padding: 26px 20px;
+
+  @media (--not-wide-vp) {
+    background-color: var(--contacts-color, var(--transparent));
+  }
 
   @media (--middle-vp) {
     padding: 56px 70px;
@@ -13,6 +16,7 @@
     width: 565px;
     height: 198px;
     padding: 56px 80px;
+    background-color: var(--white);
   }
 }
 

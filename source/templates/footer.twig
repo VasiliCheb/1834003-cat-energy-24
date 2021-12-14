@@ -1,4 +1,4 @@
-<footer class="page-footer">
+<footer class="page-footer {% if permalink == "index.html" %}page-footer--within_index{% endif %}">
   <div class="page-footer__wrapper">
     <div class="page-footer__wrapper_grid">
       <div class="page-footer__contacts page__wrapper_center">
@@ -21,7 +21,7 @@
 
     <div class="page-footer__container page__wrapper_center">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="index.html">
+        <a class="page-footer__logo-link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
           <img class="page-footer__logo-title" src="img/index-logo-title.svg" width="128" height="24" alt="Заглавие логотипа «Кэт энерджи».">
         </a>
       </div>

@@ -20,6 +20,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: var(--color-cat_background);
     z-index: -1;
 
     @media (--middle-vp) {
