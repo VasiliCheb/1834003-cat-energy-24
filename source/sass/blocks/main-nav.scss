@@ -88,8 +88,21 @@
   text-transform: uppercase;
   padding: 22px 25px 24px;
 
+  @media (--not-small-vp) {
+    &[aria-current] {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 10px;
+      text-decoration-color: var(--green);
+    }
+  }
+
   @media (--wide-vp) {
     color: var(--link-color, var(--black));
+
+    &[aria-current] {
+      text-decoration-color: var(--link-color, var(--green));
+    }
   }
 }
 
