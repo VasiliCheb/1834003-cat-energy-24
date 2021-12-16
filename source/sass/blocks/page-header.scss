@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -17,9 +18,31 @@
 .page-header__wrapper-logo {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 17px;
+
+  @media (--small-vp) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: -20px;
+      bottom: 0;
+      background-color: var(--color-grey_border);
+      box-shadow: 40px 0 0 0 var(--color-grey_border);
+    }
+  }
 }
 
 .page-header__logo-link {
   text-decoration: none;
+}
+
+.page-header__logo-link--title {
+  margin: 0 auto;
+  padding-right: 33px;
 }
