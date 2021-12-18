@@ -1,4 +1,38 @@
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+  align-self: flex-start;
+  width: 100%;
+
+  @media (--not-small-vp) {
+    align-self: center;
+  }
+}
+
 .copyright__link {
+  position: relative;
+  display: block;
   color: var(--grey-dark);
   text-decoration: none;
+  padding-top: 28px;
+  padding-bottom: 32px;
+
+  @media (--not-small-vp) {
+    padding-right: 50px;
+    text-align: right;
+  }
+}
+
+.copyright__link::before {
+  position: absolute;
+  content: "";
+  display: block;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background: currentColor;
+  mask-image: url("../../icons/sprite.svg#footer-logo-html");
+  width: 27px;
+  height: 34px;
+  top: 22px;
+  right: 0;
 }

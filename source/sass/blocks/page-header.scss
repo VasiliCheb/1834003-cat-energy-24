@@ -11,7 +11,7 @@
 
   @media (--wide-vp) {
     grid-template-columns: 1fr 1fr;
-    padding: 40px 0;
+    padding: 20px 0;
   }
 }
 
@@ -45,4 +45,9 @@
 .page-header__logo-link--title {
   margin: 0 auto;
   padding-right: 33px;
+
+  @media (--not-small-vp) {
+    padding-right: 0;
+    margin-left: 10px;
+  }
 }

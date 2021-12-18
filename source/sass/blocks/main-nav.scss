@@ -38,6 +38,10 @@
       display: block;
     }
   }
+
+  @media (--not-small-vp) {
+    margin-right: -17.5px;
+  }
 }
 
 .main-nav__list {
@@ -59,6 +63,7 @@
   @media (--wide-vp) {
     font-size: 20px;
     line-height: 30px;
+    justify-content: flex-end;
   }
 }
 
@@ -89,6 +94,8 @@
   padding: 22px 25px 24px;
 
   @media (--not-small-vp) {
+    padding: 22px 17.5px 24px;
+
     &[aria-current] {
       text-decoration: underline;
       text-decoration-thickness: 2px;
@@ -110,15 +117,14 @@
   position: absolute;
   top: 10px;
   right: 0;
-  display: block;
   width: 34px;
   height: 38px;
   background-color: var(--white);
   cursor: pointer;
   border: none;
 
-  @media (--not-small-vp) {
-    display: none;
+  @media (--small-vp) {
+    display: block;
   }
 }
 
