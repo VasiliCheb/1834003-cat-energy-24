@@ -1,26 +1,41 @@
 .form-commentary {
-  padding: 20px 0;
-
   @media (--wide-vp) {
     grid-column: 1 / -1;
   }
 }
 
 .form-commentary__label {
+  position: relative;
   display: block;
   font-size: 24px;
   line-height: 26px;
   color: var(--black);
   margin-bottom: 38px;
+  width: fit-content;
+  --air-gap: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    top: 50%;
+    background-color: var(--green);
+    width: calc(100vw - 100% - var(--air-gap));
+    right: calc(100% + var(--air-gap));
+    box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--green);
+  }
 
   @media (--not-small-vp) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    --air-gap: 40px;
   }
 }
 
 .form-commentary__field {
+  box-sizing: border-box;
   font-family: var(--accent-font);
   font-size: 16px;
   line-height: 18px;
@@ -28,9 +43,14 @@
   color: var(--grey-dark);
   text-transform: uppercase;
   width: 100%;
+  min-height: 150px;
+  padding: 9px 12px 9px 15px;
+  border: 1px solid var(--color-form_border);
 
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
+    min-height: 174px;
+    padding: 10px 20px;
   }
 }

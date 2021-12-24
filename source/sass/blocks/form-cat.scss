@@ -4,15 +4,17 @@
   color: var(--grey-dark);
   text-transform: uppercase;
   border: none;
-  padding: 20px 0;
+  padding-bottom: 27px;
 
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 72px;
   }
 
   @media (--wide-vp) {
     grid-column: 1 / 2;
+    padding-bottom: 0;
   }
 }
 
@@ -25,10 +27,16 @@
 .form-cat__item {
   &:not(:last-child) {
     margin-bottom: 14px;
+
+    @media (--not-small-vp) {
+      margin-bottom: 20px;
+    }
   }
 }
 
+
 .form-cat__field {
+  box-sizing: border-box;
   font-family: var(--accent-font);
   font-size: 16px;
   line-height: 18px;
@@ -36,13 +44,20 @@
   color: var(--grey-dark);
   text-transform: uppercase;
   flex-grow: 1;
+  height: 45px;
+  border: 1px solid var(--color-form_border);
+  margin-left: 15px;
+  padding: 0 15px;
 
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
+    height: 52px;
+    padding: 0 20px;
   }
 }
 
 .form-cat__label {
   display: flex;
+  align-items: center;
 }

@@ -20,17 +20,17 @@
           <ul class="form-cat__list">
             <li class="form-cat__item nickname">
               <label class="form-cat__label">Имя:*
-                <input class="form-cat__field"  placeholder="Барсик" type="text" name="nickname-cat" required>
+                <input class="form-cat__field" placeholder="Барсик" type="text" name="nickname-cat" required>
               </label>
             </li>
             <li class="form-cat__item weight">
-              <label class="form-cat__label">Вес (кг):*
-                <input class="form-cat__field"  placeholder="7" type="number" name="weight-cat" required>
+              <label class="form-cat__label">Вес&nbsp;(кг):*
+                <input class="form-cat__field" placeholder="7" type="number" name="weight-cat" required>
               </label>
             </li>
             <li class="form-cat__item years">
-              <label class="form-cat__label">Возраст (лет):
-                <input class="form-cat__field"  placeholder="7" type="number" name="years-cat">
+              <label class="form-cat__label">Возраст&nbsp;(лет):
+                <input class="form-cat__field" placeholder="7" type="number" name="years-cat">
               </label>
             </li>
           </ul>
@@ -41,47 +41,49 @@
           <ul class="form-radio__list">
             <li class="form-radio__item slimming">
               <label class="form-radio__label">
-                <input class="form-radio__input page__hidden" type="radio" name="goal" value="slimming-cat" checked>
+                <input class="form-radio__input" type="radio" name="goal" value="slimming-cat" checked>
                 <span class="form-radio__control-label">Похудение</span>
               </label>
             </li>
             <li class="form-radio__item mass">
               <label class="form-radio__label">
-                <input class="form-radio__input page__hidden" type="radio" name="goal" value="mass-cat">
+                <input class="form-radio__input" type="radio" name="goal" value="mass-cat">
                 <span class="form-radio__control-label">Набор массы</span>
               </label>
             </li>
             <li class="form-radio__item advise">
               <label class="form-radio__label">
-                <input class="form-radio__input page__hidden" type="radio" name="goal" value="nutritional-advice">
+                <input class="form-radio__input" type="radio" name="goal" value="nutritional-advice">
                 <span class="form-radio__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form-selection__set form-owner">
+        <fieldset class="form-selection__set form-selection__set--owner form-owner">
           <legend class="form-owner__legend">
-            <span class="form-owner__legend-text">Контактные данные</span>
+            <span class="form-owner__legend-text form-owner__legend-text_margin">Контактные данные</span>
             <span class="form-owner__legend-text">(владельца кота)</span>
           </legend>
           <ul class="form-owner__list">
             <li class="form-owner__item email">
               <label class="form-owner__label">E-mail:*
                 <input class="form-owner__field" type="email" placeholder="kuklachev@gmail.com" name="email" required>
+                <span class="form-owner__icon-email"></span>
               </label>
             </li>
             <li class="form-owner__item phone">
               <label class="form-owner__label">Телефон:*
                 <input class="form-owner__field" type="tel" placeholder="8 (960) 900-60-90" pattern="[8] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}" name="phone" required>
+                <span class="form-owner__icon-phone"></span>
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <div class="form-commentary">
+        <div class="form-selection__commentary form-commentary">
           <label class="form-commentary__label" for="commentary">Комментарий</label>
-          <textarea class="form-commentary__field" id="commentary" name="commentary" rows="5" cols="35">Расскажите обо всех повадках кота</textarea>
+          <textarea class="form-commentary__field" id="commentary" name="commentary">Расскажите обо всех повадках кота</textarea>
         </div>
 
         <fieldset class="form-selection__set form-checkbox">
@@ -89,25 +91,25 @@
           <ul class="form-checkbox__list">
             <li class="form-checkbox__item sweetener">
               <label class="form-checkbox__label">
-                <input class="form-checkbox__control-input page__hidden" type="checkbox" name="additional" value="sweetener" checked>
+                <input class="form-checkbox__control-input" type="checkbox" name="additional" value="sweetener" checked>
                 <span class="form-checkbox__control-label">Cахарозаменитель</span>
               </label>
             </li>
             <li class="form-checkbox__item water">
               <label class="form-checkbox__label">
-                <input class="form-checkbox__control-input page__hidden" type="checkbox" name="additional" value="water">
+                <input class="form-checkbox__control-input" type="checkbox" name="additional" value="water">
                 <span class="form-checkbox__control-label">Питьевая вода</span>
               </label>
             </li>
             <li class="form-checkbox__item milk">
               <label class="form-checkbox__label">
-                <input class="form-checkbox__control-input page__hidden" type="checkbox" name="additional" value="milk">
+                <input class="form-checkbox__control-input" type="checkbox" name="additional" value="milk">
                 <span class="form-checkbox__control-label">Молоко</span>
               </label>
             </li>
             <li class="form-checkbox__item vitamins">
               <label class="form-checkbox__label">
-                <input class="form-checkbox__control-input page__hidden" type="checkbox" name="additional" value="vitamins">
+                <input class="form-checkbox__control-input" type="checkbox" name="additional" value="vitamins">
                 <span class="form-checkbox__control-label">Витамины</span>
               </label>
             </li>

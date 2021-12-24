@@ -5,15 +5,19 @@
   @media (--wide-vp) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .form__button {
   width: 100%;
+  padding: 7px 45px;
+  margin-bottom: 20px;
 
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 26px;
-    width: 50%;
+    padding: 13px 45px;
+    margin-bottom: 0;
   }
 }
