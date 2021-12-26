@@ -51,3 +51,9 @@
     margin-left: 10px;
   }
 }
+
+.page-header__main-nav {
+  @media (--not-small-vp) {
+    margin-right: -17.5px;
+  }
+}

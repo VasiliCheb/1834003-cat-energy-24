@@ -1,4 +1,5 @@
 .catalog-aside {
+  position: relative;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -8,32 +9,51 @@
     url("../../img/catalog-background-cat.jpg");
   width: 100%;
   height: 290px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-color: var(--color-cat-catalog_background);
   text-align: center;
 
-  @media (--not-small-vp) {
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../icons/sprite.svg#catalog-icon-gift");
+    width: 78px;
+    height: 80px;
+    top: 60px;
+    left: 50%;
+    margin-left: -39px;
+
+    @media (--middle-vp) {
+      top: 50%;
+      margin-top: -40px;
+      left: 116px;
+    }
+  }
+
+  @media (--middle-vp) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 200px;
-    text-align: right;
+    text-align: left;
   }
 
   @media (--wide-vp) {
-    height: 290px;
-    text-align: center;
+    height: 100%;
   }
 }
 
 .catalog-aside__description {
   padding-top: 187px;
+  margin: 0;
 
-  @media (--not-small-vp) {
-    padding-top: 71px;
+  @media (--middle-vp) {
     margin-right: 124px;
-  }
-
-  @media (--wide-vp) {
-    padding-top: 185px;
-    margin: 0;
+    padding: 0;
   }
 }

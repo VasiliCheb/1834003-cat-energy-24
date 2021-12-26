@@ -2,14 +2,20 @@
   flex-grow: 1;
 }
 
-.page-main_selection {
+.page-main__selection {
   @media (--wide-vp) {
     margin-bottom: 82px;
   }
 }
 
-.page-main_advantages {
+.page-main__advantages {
   @media (--wide-vp) {
     margin-bottom: 51px;
+  }
+}
+
+.page-main__catalog-add {
+  @media (--wide-vp) {
+    margin-bottom: 86px;
   }
 }

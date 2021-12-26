@@ -1,12 +1,27 @@
 .catalog-main__title {
+  position: relative;
   font-family: var(--accent-font);
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: var(--black);
   padding-top: 27px;
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin: 0;
+  padding-bottom: 40px;
+
+  @media (--small-vp) {
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: var(--color-grey_border);
+      box-shadow: -20px 0 0 0 var(--color-grey_border), 20px 0 0 0 var(--color-grey_border);
+    }
+  }
 
   @media (--not-small-vp) {
     font-size: 60px;
