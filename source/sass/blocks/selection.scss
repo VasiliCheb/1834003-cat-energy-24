@@ -3,6 +3,8 @@
   flex-direction: column;
   font-family: var(--accent-font);
   color: var(--white);
+  --bg-url: url("../../img/index-bg-cat-s@1x.jpg");
+
 
   @media (--small-vp) {
     position: relative;
@@ -12,16 +14,23 @@
   &::before {
     position: absolute;
     content: "";
-    background-image:
-      linear-gradient(to bottom, var(--green_background), var(--green_background)),
-      url("../../img/index-background-cat.jpg");
+    background:
+      linear-gradient(
+        var(--green_background),
+        var(--green_background)
+        ),
+      var(--bg-url);
     width: 100%;
     height: 302px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-color: var(--color-cat_background);
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      --bg-url: url("../../img/index-bg-cat-s@2x.jpg");
+    }
 
     @media (--middle-vp) {
       content: initial;
@@ -32,8 +41,12 @@
       top: 0;
       width: 50%;
       height: 694px;
-      background-size: contain;
-      background-position: center left;
+      --bg-url: url("../../img/index-bg-cat-l@1x.jpg");
+      background-position: bottom right;
+
+      @media (min-resolution: 2dppx) {
+        --bg-url: url("../../img/index-bg-cat-l@2x.jpg");
+      }
     }
   }
 }
@@ -103,18 +116,14 @@
   margin: 0 auto;
 
   @media (--not-small-vp) {
-    width: 709px;
-    height: 609px;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     z-index: -1;
-    margin-top: 220px;
     justify-self: center;
+    margin-top: 220px;
   }
 
   @media (--wide-vp) {
-    width: 552px;
-    height: 499px;
     grid-column: 2 / -1;
     margin-top: 0;
     margin-left: -150px;
