@@ -15,11 +15,11 @@
       <div class="selection__wrapper page__wrapper-center">
         <h2 class="selection__title">Функциональное<br>питание для котов</h2>
         <i class="selection__slogan">Занялся собой? Займись котом!</i>
-        <div class="selection__image">
+        <div class="selection__image-set">
           <picture>
-            <source class="selection__image-wide" media="(min-width: 1280px)" width="552" height="499" srcset="img/index-canned-l@1x.png 1x, img/index-canned-l@2x.png 2x">
-            <source class="selection__image-middle" media="(min-width: 768px)" width="709" height="609" srcset="img/index-canned-m@1x.png 1x, img/index-canned-m@2x.png 2x">
-            <img class="selection__image-small" src="img/index-canned-s@1x.png" width="280" height="270" srcset="img/index-canned-s@2x.png 2x" alt="Баночка куриной консервы «Кэт энерджи».">
+            <source media="(min-width: 1280px)" srcset="img/index-canned-l@1x.png 1x, img/index-canned-l@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-canned-m@1x.png 1x, img/index-canned-m@2x.png 2x">
+            <img class="selection__image" src="img/index-canned-s@1x.png" width="280" height="270" srcset="img/index-canned-s@2x.png 2x" alt="Баночка куриной консервы «Кэт энерджи».">
           </picture>
         </div>
         <a class="button selection__button-link" href="form.html">Подобрать программу</a>
@@ -69,54 +69,60 @@
       <h2 class="page__hidden">Сравнение результата.</h2>
       <div class="compare__wrapper page__wrapper-center">
         <div class="compare__wrapper-grid">
-        <h3 class="compare__title">Живой пример</h3>
-        <p class="compare__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="compare__container-list">
-        <dl class="compare__effect-list">
-          <div class="compare__effect-frame">
-            <dt class="compare__effect-term">Cнижение веса</dt>
-            <dd class="compare__effect-definition">5 Кг</dd>
+          <h3 class="compare__title">Живой пример</h3>
+          <p class="compare__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="compare__container-list">
+            <dl class="compare__effect-list">
+              <div class="compare__effect-frame">
+                <dt class="compare__effect-term">Cнижение веса</dt>
+                <dd class="compare__effect-definition">5 Кг</dd>
+              </div>
+              <div class="compare__effect-frame">
+                <dt class="compare__effect-term">Затрачено времени</dt>
+                <dd class="compare__effect-definition">60 Дней</dd>
+              </div>
+            </dl>
+            <dl class="compare__expenses-list">
+              <dt class="compare__expenses-term">Затраты на питание:</dt>
+              <dd class="compare__expenses-definition">15 000 Руб.</dd>
+            </dl>
           </div>
-          <div class="compare__effect-frame">
-            <dt class="compare__effect-term">Затрачено времени</dt>
-            <dd class="compare__effect-definition">60 Дней</dd>
-          </div>
-        </dl>
-        <dl class="compare__expenses-list">
-          <dt class="compare__expenses-term">Затраты на питание:</dt>
-          <dd class="compare__expenses-definition">15 000 Руб.</dd>
-        </dl>
-        </div>
-        <div class="compare__range range">
-          <figure class="compare__range-photos range__photos">
-            <figcaption class="page__hidden">Сравнение кота Бориса до и после применения функционального питания «Кэт энерджи».</figcaption>
-            <div class="compare__range-slider range__slider">
-              <div class="compare__image range__image-before">
+
+          <div class="compare__range range">
+            <figure class="compare__range-photos range__photos">
+              <figcaption class="page__hidden">Сравнение кота Бориса до и после применения функционального питания «Кэт энерджи».</figcaption>
+              <div class="compare__range-slider compare__range-slider--before range__slider">
                 <picture>
-                  <source class="compare__image-middle" media="(min-width: 768px)" width="592" height="511" srcset="img/index-cat-before-ml@1x.png 1x, img/index-cat-before-ml@2x.png 2x">
-                  <img class="compare__image-small" src="img/index-cat-before-s@1x.png" width="280" height="232" srcset="img/index-cat-before-s@2x.png 2x" alt="Располневший кот Борис.">
+                  <source type="image/avif" media="(min-width: 768px)" srcset="img/index-cat-before-ml@1x.avif 1x, img/index-cat-before-ml@2x.avif 2x">
+                  <source type="image/avif" srcset="img/index-cat-before-s@1x.avif 1x, img/index-cat-before-s@2x.avif 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/index-cat-before-ml@1x.webp 1x, img/index-cat-before-ml@2x.webp 2x">
+                  <source type="image/webp" srcset="img/index-cat-before-s@1x.webp 1x, img/index-cat-before-s@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/index-cat-before-ml@1x.png 1x, img/index-cat-before-ml@2x.png 2x">
+                  <img class="compare__image range__image-before" src="img/index-cat-before-s@1x.png" width="280" height="232" srcset="img/index-cat-before-s@2x.png 2x" alt="Располневший кот Борис.">
                 </picture>
               </div>
-            </div>
-            <div class="compare__range-slider range__slider">
-              <div class="compare__image range__image-after">
+              <div class="compare__range-slider compare__range-slider--after range__slider">
                 <picture>
-                  <source class="compare__image-middle" media="(min-width: 768px)" width="536" height="511" srcset="img/index-cat-after-ml@1x.png 1x, img/index-cat-after-ml@1x.png 2x">
-                  <img class="compare__image-small" src="img/index-cat-after-s@1x.png" width="243" height="232" srcset="img/index-cat-after-s@2x.png 2x" alt="Похудевший кот Борис">
+                  <source type="image/avif" media="(min-width: 768px)" srcset="img/index-cat-after-ml@1x.avif 1x, img/index-cat-after-ml@2x.avif 2x">
+                  <source type="image/avif" srcset="img/index-cat-after-s@1x.avif 1x, img/index-cat-after-s@2x.avif 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/index-cat-after-ml@1x.webp 1x, img/index-cat-after-ml@2x.webp 2x">
+                  <source type="image/webp" srcset="img/index-cat-after-s@1x.webp 1x, img/index-cat-after-s@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/index-cat-after-ml@1x.png 1x, img/index-cat-after-ml@1x.png 2x">
+                  <img class="compare__image range__image-after" src="img/index-cat-after-s@1x.png" width="243" height="232" srcset="img/index-cat-after-s@2x.png 2x" alt="Похудевший кот Борис">
                 </picture>
               </div>
-            </div>
-          </figure>
-          <div class="compare__range-bar range__bar">
-            <button class="compare__range-button range__button" type="button">Было</button>
-            <div class="compare__range-scale range__scale">
-              <div class="compare__range-thumb range__thumb">
-                <span class="page__hidden">Сравнить котов в разных состояниях, до и после.</span>
+            </figure>
+
+            <div class="compare__range-bar range__bar">
+              <button class="compare__range-button range__button" type="button">Было</button>
+              <div class="compare__range-scale range__scale">
+                <div class="compare__range-thumb range__thumb">
+                  <span class="page__hidden">Сравнить котов в разных состояниях, до и после.</span>
+                </div>
               </div>
+              <button class="compare__range-button range__button" type="button">Стало</button>
             </div>
-            <button class="compare__range-button range__button" type="button">Стало</button>
           </div>
-        </div>
         </div>
       </div>
     </section>
