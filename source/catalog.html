@@ -1,5 +1,6 @@
 {% set pageId = 1 %}
 {% set permalink = pages[pageId].path %}
+{%- import "./templates/macros.twig" as macros -%}
 
 <!DOCTYPE html>
 <html class="page" lang="ru">
@@ -20,11 +21,7 @@
             <h3 class="product__title">Cat&nbsp;Energy PRO 500&nbsp;г</h3>
           </a>
           <a class="product__link product__link--image" href="#">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/can-chicken500-l@1x.png 1x, img/can-chicken500-l@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/can-chicken500-m@1x.png 1x, img/can-chicken500-m@2x.png 2x">
-              <img class="product__image" src="img/can-chicken500-s@1x.png" width="84" height="112" srcset="img/can-chicken500-s@2x.png 2x" alt="Баночка куриной консервы «Кэт энерджи Про 500 г.">
-            </picture>
+            {{ macros.picture("product__image", "./img/", "can-chicken500", "png", "Баночка куриной консервы «Кэт энерджи» Про 500 г.", "84", "112") }}
           </a>
 
           <dl class="product__specification">
@@ -49,11 +46,7 @@
             <h3 class="product__title">Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
           </a>
           <a class="product__link product__link--image" href="#">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/can-chicken1000-l@1x.png 1x, img/can-chicken1000-l@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/can-chicken1000-m@1x.png 1x, img/can-chicken1000-m@2x.png 2x">
-              <img class="product__image" src="img/can-chicken1000-s@1x.png" width="84" height="112" srcset="img/can-chicken1000-s@2x.png 2x" alt="Баночка куриной консервы «Кэт энерджи Про 1000 г.">
-            </picture>
+            {{ macros.picture("product__image", "./img/", "can-chicken1000", "png", "Баночка куриной консервы «Кэт энерджи» Про 1000 г.", "84", "112") }}
           </a>
           <dl class="product__specification">
             <div class="product__specification-set">
@@ -77,11 +70,7 @@
             <h3 class="product__title">Cat&nbsp;Energy PRO 500&nbsp;г</h3>
           </a>
           <a class="product__link product__link--image" href="#">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/can-fish500-l@1x.png 1x, img/can-fish500-l@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/can-fish500-m@1x.png 1x, img/can-fish500-m@2x.png 2x">
-              <img class="product__image" src="img/can-fish500-s@1x.png" width="84" height="112" srcset="img/can-fish500-s@2x.png 2x" alt="Баночка рыбной консервы «Кэт энерджи Про 500 г.">
-            </picture>
+            {{ macros.picture("product__image", "./img/", "can-fish500", "png", "Баночка рыбной консервы «Кэт энерджи» Про 500 г.", "84", "112") }}
           </a>
           <dl class="product__specification">
             <div class="product__specification-set">
@@ -105,11 +94,7 @@
             <h3 class="product__title">Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
           </a>
           <a class="product__link product__link--image" href="#">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/can-fish1000-l@1x.png 1x, img/can-fish1000-l@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/can-fish1000-m@1x.png 1x, img/can-fish1000-m@2x.png 2x">
-              <img class="product__image" src="img/can-fish1000-s@1x.png" width="84" height="112" srcset="img/can-fish1000-s@2x.png 2x" alt="Баночка рыбной консервы «Кэт энерджи Про 1000 г.">
-            </picture>
+            {{ macros.picture("product__image", "./img/", "can-fish1000", "png", "Баночка рыбной консервы «Кэт энерджи» Про 1000 г.", "84", "112") }}
           </a>
           <dl class="product__specification">
             <div class="product__specification-set">
@@ -133,11 +118,7 @@
             <h3 class="product__title">Cat&nbsp;Energy slim 500&nbsp;г</h3>
           </a>
           <a class="product__link product__link--image" href="#">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/can-buckwheat500-l@1x.png 1x, img/can-buckwheat500-l@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/can-buckwheat500-m@1x.png 1x, img/can-buckwheat500-m@2x.png 2x">
-              <img class="product__image" src="img/can-buckwheat500-s@1x.png" width="84" height="112" srcset="img/can-buckwheat500-s@2x.png 2x" alt="Баночка гречневой консервы «Кэт энерджи Слим 500 г.">
-            </picture>
+            {{ macros.picture("product__image", "./img/", "can-buckwheat500", "png", "Баночка гречневой консервы «Кэт энерджи» Слим 500 г.", "84", "112") }}
           </a>
           <dl class="product__specification">
             <div class="product__specification-set">
@@ -161,11 +142,7 @@
             <h3 class="product__title">Cat&nbsp;Energy slim 1000&nbsp;г</h3>
           </a>
           <a class="product__link product__link--image" href="#">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/can-buckwheat1000-l@1x.png 1x, img/can-buckwheat1000-l@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/can-buckwheat1000-m@1x.png 1x, img/can-buckwheat1000-m@2x.png 2x">
-              <img class="product__image" src="img/can-buckwheat1000-s@1x.png" width="84" height="112" srcset="img/can-buckwheat1000-s@2x.png 2x" alt="Баночка гречневой консервы «Кэт энерджи Слим 1000 г.">
-            </picture>
+            {{ macros.picture("product__image", "./img/", "can-buckwheat1000", "png", "Баночка гречневой консервы «Кэт энерджи» Слим 1000 г.", "84", "112") }}
           </a>
           <dl class="product__specification">
             <div class="product__specification-set">
@@ -189,11 +166,7 @@
             <h3 class="product__title">Cat&nbsp;Energy slim 500&nbsp;г</h3>
           </a>
           <a class="product__link product__link--image" href="#">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/can-rice500-l@1x.png 1x, img/can-rice500-l@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/can-rice500-m@1x.png 1x, img/can-rice500-m@2x.png 2x">
-              <img class="product__image" src="img/can-rice500-s@1x.png" width="84" height="112" srcset="img/can-rice500-s@2x.png 2x" alt="Баночка рисовой консервы «Кэт энерджи Слим 500 г.">
-            </picture>
+            {{ macros.picture("product__image", "./img/", "can-rice500", "png", "Баночка рисовой консервы «Кэт энерджи» Слим 500 г.", "84", "112") }}
           </a>
           <dl class="product__specification">
             <div class="product__specification-set">
