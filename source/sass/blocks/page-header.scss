@@ -52,6 +52,31 @@
   }
 }
 
+.page-header__logo-image {
+  width: 34px;
+  height: 39px;
+
+  @media (--not-small-vp) {
+    width: 61px;
+    height: 52px;
+  }
+
+  @media (--wide-vp) {
+    width: 71px;
+    height: 60px;
+  }
+}
+
+.page-header__logo-title {
+  width: 102px;
+  height: 19px;
+
+  @media (--wide-vp) {
+    width: 118px;
+    height: 22px;
+  }
+}
+
 .page-header__main-nav {
   @media (--not-small-vp) {
     margin-right: -17.5px;

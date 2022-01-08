@@ -78,26 +78,26 @@
     background-repeat: no-repeat;
 
     @media (--small-vp) {
-      width: 36px;
+      width: 50px;
       height: 50px;
-      background-size: 50px 50px;
-      left: 29px;
+      background-size: 50px;
+      left: 22px;
       top: 21px;
     }
 
     @media (--middle-vp) {
-      width: 140px;
-      height: 194px;
-      background-size: 194px 194px;
-      right: 92px;
+      width: 200px;
+      height: 200px;
+      background-size: 200px;
+      right: 61px;
       top: 81px;
     }
 
     @media (--wide-vp) {
-      width: 70px;
-      height: 97px;
-      background-size: 97px 97px;
-      left: 67px;
+      width: 100px;
+      height: 100px;
+      background-size: 100px;
+      left: 52px;
       top: 41px;
     }
   }
@@ -112,27 +112,27 @@
     background-repeat: no-repeat;
 
     @media (--small-vp) {
-      width: 67px;
-      height: 28px;
-      background-size: 67px 67px;
+      width: 68px;
+      height: 68px;
+      background-size: 68px;
       left: 13px;
-      top: 35px;
+      top: 15px;
     }
 
     @media (--middle-vp) {
       width: 268px;
-      height: 112px;
-      background-size: 268px 268px;
+      height: 268px;
+      background-size: 268px;
       right: 28px;
-      top: 135px;
+      top: 57px;
     }
 
     @media (--wide-vp) {
       width: 134px;
-      height: 56px;
-      background-size: 134px 134px;
+      height: 134px;
+      background-size: 134px;
       left: 33px;
-      top: 67px;
+      top: 34px;
     }
   }
 }
@@ -173,6 +173,8 @@
 }
 
 .advantages__button-link {
+  --transform-arrow: -8px;
+  position: relative;
   display: block;
   font-family: var(--accent-font);
   font-size: 16px;
@@ -181,6 +183,7 @@
   text-decoration: none;
   text-transform: uppercase;
   padding-top: 20px;
+  z-index: 1;
 
   @media (--small-vp) {
     width: 100%;
@@ -190,5 +193,59 @@
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .advantages__button-text {
+    outline: 2px solid var(--black);
+  }
+
+  &:focus:not(:focus-visible) .advantages__button-text {
+    outline: none;
+  }
+
+  &:focus-visible .advantages__button-text {
+    outline: 2px solid var(--black);
+  }
+
+  &:hover {
+    --transform-arrow: 0;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.advantages__button-text {
+  position: relative;
+  display: block;
+  width: fit-content;
+  background-color: var(--grey-basic_background);
+  --gap-arrow: 15px;
+  padding-right: var(--gap-arrow);
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../icons/sprite.svg#index-icon-arrow");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 12px;
+    background-size: 32px;
+    left: 100%;
+    top: 50%;
+    margin-left: var(--transform-arrow);
+    margin-top: -6px;
+    z-index: -1;
+    transition: margin-left 0.3s;
+  }
+
+  @media (--not-small-vp) {
+    --gap-arrow: 25px;
   }
 }
