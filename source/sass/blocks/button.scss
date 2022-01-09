@@ -8,6 +8,30 @@
   background-color: var(--green);
   border: none;
 
+  &:focus {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    background-color: var(--green_hover);
+  }
+
+  &:active {
+    background-color: var(--green_hover);
+    color: var(--white-opacity);
+  }
+
   &--size_wide {
     width: 100%;
   }

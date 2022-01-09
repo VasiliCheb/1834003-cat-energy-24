@@ -225,5 +225,14 @@
   &--more_color {
     color: var(--grey-dark);
     background-color: var(--grey-basic_background);
+
+    &:hover {
+      background-color: var(--grey_hover);
+    }
+
+    &:active {
+      background-color: var(--grey_hover);
+      color: var(--grey_active);
+    }
   }
 }

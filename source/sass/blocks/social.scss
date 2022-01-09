@@ -20,6 +20,27 @@
   padding: 20px 15px;
   color: var(--grey-special);
 
+  &:focus {
+    outline: 2px solid var(--black);
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--black);
+  }
+
+  &:hover {
+    color: var(--green);
+  }
+
+  &:active {
+    color: var(--green);
+    opacity: 30%;
+  }
+
   &::before {
     content: "";
     display: block;
