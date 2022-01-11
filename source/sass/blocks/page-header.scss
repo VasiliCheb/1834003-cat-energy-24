@@ -94,6 +94,10 @@
   width: 102px;
   height: 19px;
 
+  @media (--not-small-vp) {
+    --fill: var(--grey-dark);
+  }
+
   @media (--wide-vp) {
     width: 118px;
     height: 22px;

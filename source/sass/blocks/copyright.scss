@@ -19,8 +19,9 @@
   --color-situation: var(--grey-special);
 
   @media (--not-small-vp) {
+    width: fit-content;
     padding-right: 50px;
-    text-align: right;
+    margin-left: auto;
   }
 
   &:focus {
