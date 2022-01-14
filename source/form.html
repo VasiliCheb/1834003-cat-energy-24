@@ -9,7 +9,7 @@
 <body class="page__body">
   {% include "./templates/header.twig" %}
 
-  <main class="page-main form-main">
+  <main class="page-main">
     <h1 class="page__hidden">Форма подбора индивидуалной программы питания от «Кэт энерджи».</h1>
     <section class="form-selection page__wrapper-center">
       <h2 class="form-selection__title">Подбор программы</h2>
@@ -19,17 +19,17 @@
         <fieldset class="form-selection__set form-cat">
           <legend class="page__hidden">Сведения о коте:</legend>
           <ul class="form-cat__list">
-            <li class="form-cat__item nickname">
+            <li class="form-cat__item">
               <label class="form-cat__label">Имя:*
                 <input class="form-cat__field" placeholder="Барсик" type="text" name="nickname-cat" required>
               </label>
             </li>
-            <li class="form-cat__item weight">
+            <li class="form-cat__item">
               <label class="form-cat__label">Вес&nbsp;(кг):*
                 <input class="form-cat__field" placeholder="7" type="number" name="weight-cat" required>
               </label>
             </li>
-            <li class="form-cat__item years">
+            <li class="form-cat__item">
               <label class="form-cat__label">Возраст&nbsp;(лет):
                 <input class="form-cat__field" placeholder="7" type="number" name="years-cat">
               </label>
@@ -40,19 +40,19 @@
         <fieldset class="form-selection__set form-radio">
           <legend class="page__hidden">Создание цели:</legend>
           <ul class="form-radio__list">
-            <li class="form-radio__item slimming">
+            <li class="form-radio__item">
               <label class="form-radio__label">
                 <input class="form-radio__input" type="radio" name="goal" value="slimming-cat" checked>
                 <span class="form-radio__control-label">Похудение</span>
               </label>
             </li>
-            <li class="form-radio__item mass">
+            <li class="form-radio__item">
               <label class="form-radio__label">
                 <input class="form-radio__input" type="radio" name="goal" value="mass-cat">
                 <span class="form-radio__control-label">Набор массы</span>
               </label>
             </li>
-            <li class="form-radio__item advise">
+            <li class="form-radio__item">
               <label class="form-radio__label">
                 <input class="form-radio__input" type="radio" name="goal" value="nutritional-advice">
                 <span class="form-radio__control-label">Не знаю (Нужен ваш совет)</span>
@@ -67,13 +67,13 @@
             <span class="form-owner__legend-text">(владельца кота)</span>
           </legend>
           <ul class="form-owner__list">
-            <li class="form-owner__item email">
+            <li class="form-owner__item">
               <label class="form-owner__label">E-mail:*
                 <input class="form-owner__field" type="email" placeholder="kuklachev@gmail.com" name="email" required>
                 <span class="form-owner__icon form-owner__icon--email"></span>
               </label>
             </li>
-            <li class="form-owner__item phone">
+            <li class="form-owner__item">
               <label class="form-owner__label">Телефон:*
                 <input class="form-owner__field" type="tel" placeholder="8 (960) 900-60-90" pattern="[8] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}" name="phone" required>
                 <span class="form-owner__icon form-owner__icon--phone"></span>
@@ -90,25 +90,25 @@
         <fieldset class="form-selection__set form-checkbox">
           <legend class="form-checkbox__legend">Дополнительно</legend>
           <ul class="form-checkbox__list">
-            <li class="form-checkbox__item sweetener">
+            <li class="form-checkbox__item">
               <label class="form-checkbox__label">
                 <input class="form-checkbox__control-input" type="checkbox" name="additional" value="sweetener" checked>
                 <span class="form-checkbox__control-label">Cахарозаменитель</span>
               </label>
             </li>
-            <li class="form-checkbox__item water">
+            <li class="form-checkbox__item">
               <label class="form-checkbox__label">
                 <input class="form-checkbox__control-input" type="checkbox" name="additional" value="water">
                 <span class="form-checkbox__control-label">Питьевая вода</span>
               </label>
             </li>
-            <li class="form-checkbox__item milk">
+            <li class="form-checkbox__item">
               <label class="form-checkbox__label">
                 <input class="form-checkbox__control-input" type="checkbox" name="additional" value="milk">
                 <span class="form-checkbox__control-label">Молоко</span>
               </label>
             </li>
-            <li class="form-checkbox__item vitamins">
+            <li class="form-checkbox__item">
               <label class="form-checkbox__label">
                 <input class="form-checkbox__control-input" type="checkbox" name="additional" value="vitamins">
                 <span class="form-checkbox__control-label">Витамины</span>

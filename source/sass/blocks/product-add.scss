@@ -53,6 +53,29 @@
 .product-add__link {
   color: var(--grey-dark-special);
   text-decoration: none;
+
+  &:focus {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .product-add__quantity,

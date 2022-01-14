@@ -44,6 +44,29 @@
 .product__link {
   text-decoration: none;
 
+  &:focus {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
   &--title {
     display: block;
     grid-column: 2 / -1;
@@ -72,6 +95,18 @@
       grid-column: 1 / -1;
       order: -1;
       min-height: 245px;
+    }
+
+    &:focus {
+      outline-offset: -2px;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline-offset: revert;
+    }
+
+    &:focus-visible {
+      outline-offset: -2px;
     }
   }
 

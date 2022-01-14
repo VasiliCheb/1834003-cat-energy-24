@@ -3,3 +3,25 @@
   justify-content: center;
   align-items: center;
 }
+
+.range__image-before {
+  width: 280px;
+  height: 232px;
+  object-position: left;
+
+  @media (--not-small-vp) {
+    width: 592px;
+    height: 511px;
+  }
+}
+
+.range__image-after {
+  width: 243px;
+  height: 232px;
+  object-position: right;
+
+  @media (--not-small-vp) {
+    width: 536px;
+    height: 511px;
+  }
+}

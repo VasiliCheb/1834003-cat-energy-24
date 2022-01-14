@@ -52,6 +52,7 @@
   border: 1px solid var(--color-form_border);
   margin-left: 15px;
   padding: 0 15px;
+  appearance: textfield;
 
   @media (--not-small-vp) {
     font-size: 20px;
@@ -77,6 +78,7 @@
   &:hover {
     outline: 1px solid var(--color-grey-special_border);
     outline-offset: -1px;
+    appearance: none;
   }
 
   &:not(:placeholder-shown) {
@@ -90,5 +92,11 @@
   &--error {
     outline: 2px solid var(--color-error);
     outline-offset: -2px;
+  }
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
   }
 }
