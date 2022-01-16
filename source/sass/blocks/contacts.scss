@@ -2,7 +2,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 26px 20px;
+  padding: 26px 0;
 
   @media (--not-wide-vp) {
     background-color: var(--contacts-color, var(--transparent));
@@ -14,7 +14,7 @@
 
   @media (--wide-vp) {
     width: 565px;
-    height: 198px;
+    min-height: 198px;
     padding: 56px 80px;
     background-color: var(--white);
   }
@@ -28,6 +28,7 @@
   font-weight: 400;
   color: var(--black-light);
   text-transform: uppercase;
+  grid-column: 1 / 2;
 }
 
 .contacts__text {
@@ -35,4 +36,14 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--grey-dark);
+  grid-column: 2 / -1;
+}
+
+.contacts__street,
+.contacts__city {
+  margin: 0;
+
+  @media (--middle-vp) {
+    text-align: right;
+  }
 }

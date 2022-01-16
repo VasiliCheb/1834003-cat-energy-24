@@ -24,6 +24,7 @@
 
   @media (--small-vp) {
     position: relative;
+    padding-right: 33px;
 
     &::before {
       content: "";
@@ -67,7 +68,6 @@
 
 .page-header__logo-link--title {
   margin: 0 auto;
-  padding-right: 33px;
 
   @media (--not-small-vp) {
     padding-right: 0;

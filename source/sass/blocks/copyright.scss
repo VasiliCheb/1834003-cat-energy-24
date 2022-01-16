@@ -16,11 +16,11 @@
   text-decoration: none;
   padding-top: 28px;
   padding-bottom: 32px;
+  padding-right: 50px;
   --color-situation: var(--grey-special);
 
   @media (--not-small-vp) {
     width: fit-content;
-    padding-right: 50px;
     margin-left: auto;
   }
 

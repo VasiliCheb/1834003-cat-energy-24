@@ -89,7 +89,7 @@
     cursor: not-allowed;
   }
 
-  &--error {
+  &--error[required] {
     outline: 2px solid var(--color-error);
     outline-offset: -2px;
   }
