@@ -201,6 +201,7 @@
 
 .product__specification-set {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (--not-small-vp) {
@@ -210,7 +211,17 @@
   }
 }
 
+.product__term {
+  word-wrap: break-word;
+  width: 45%;
+}
+
 .product__definition {
+  word-wrap: break-word;
+  margin-left: 0;
+  text-align: right;
+  width: 45%;
+
   &--price {
     text-transform: uppercase;
   }
@@ -255,6 +266,7 @@
 
   @media (--not-small-vp) {
     grid-column: 1 / -1;
+    margin-top: auto;
   }
 
   &--more_color {
