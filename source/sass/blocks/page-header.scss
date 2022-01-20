@@ -20,11 +20,11 @@
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 12px;
 
   @media (--small-vp) {
     position: relative;
-    padding-right: 33px;
+    padding-right: 35px;
 
     &::before {
       content: "";
@@ -67,7 +67,7 @@
 }
 
 .page-header__logo-link--title {
-  margin: 0 auto;
+  margin: 8px auto 0;
 
   @media (--not-small-vp) {
     padding-right: 0;

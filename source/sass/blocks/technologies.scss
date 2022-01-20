@@ -117,9 +117,12 @@
 }
 
 .technologies__description {
-  margin-top: 0;
+  display: block;
   margin-left: 80px;
   width: 70%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 2px;
 
   @media (--not-small-vp) {
     margin-top: 150px;
