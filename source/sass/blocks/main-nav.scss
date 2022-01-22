@@ -55,12 +55,15 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    margin-left: 16px;
+    margin-right: 3px;
   }
 
   @media (--wide-vp) {
     font-size: 20px;
     line-height: 30px;
     justify-content: flex-end;
+    margin-right: 4px;
   }
 }
 
@@ -71,6 +74,10 @@
     box-shadow: 20px 0 0 0 var(--white), -20px 0 0 0 var(--white);
     padding: 10px;
 
+    &:first-child {
+      padding-bottom: 11px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -78,6 +85,17 @@
       width: 100%;
       left: -20px;
       bottom: 0;
+      background-color: var(--color-grey_border);
+      box-shadow: 40px 0 0 0 var(--color-grey_border);
+    }
+
+    &:first-child::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: -20px;
+      top: 0;
       background-color: var(--color-grey_border);
       box-shadow: 40px 0 0 0 var(--color-grey_border);
     }
@@ -92,18 +110,20 @@
   padding: 12px 15px 14px;
 
   @media (--not-small-vp) {
-    padding: 22px 17.5px 24px;
+    padding: 27px 15px 24px;
 
     &[aria-current] {
       text-decoration: underline;
       text-decoration-thickness: 2px;
-      text-underline-offset: 10px;
+      text-underline-offset: 11px;
       text-decoration-color: var(--green);
     }
   }
 
   @media (--wide-vp) {
     color: var(--link-color, var(--black));
+    padding: 27px 15px 24px;
+    margin-left: 4px;
 
     &[aria-current] {
       text-decoration-color: var(--link-color, var(--green));

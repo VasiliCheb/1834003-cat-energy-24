@@ -2,11 +2,16 @@
   color: var(--grey-dark);
   font-size: 14px;
   line-height: 18px;
-  padding: 20px 0;
+  padding: 20px 0 50px;
 
   @media (--not-small-vp) {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 46px;
+  }
+
+  @media (--wide-vp) {
+    padding-bottom: 9px;
   }
 }
 
@@ -22,6 +27,12 @@
   @media (--not-small-vp) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 25px;
+    margin-bottom: 32px;
+  }
+
+  @media (--wide-vp) {
+    padding-top: 0;
   }
 }
 
@@ -37,6 +48,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    row-gap: 37px;
   }
 
   @media (--wide-vp) {
@@ -50,8 +62,10 @@
   margin-top: 0;
   min-height: 60px;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @media (--small-vp) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 
   &::before {
@@ -73,28 +87,28 @@
     background-image: url("../../icons/sprite.svg#index-icon-leaf");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 32px 32px;
+    background-size: 34px 34px;
   }
 
   &--icon_tub::before {
     background-image: url("../../icons/sprite.svg#index-icon-tub");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 31px 31px;
+    background-size: 34px 34px;
   }
 
   &--icon_eat::before {
     background-image: url("../../icons/sprite.svg#index-icon-eat");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 30px 30px;
+    background-size: 34px 34px;
   }
 
   &--icon_alarm::before {
     background-image: url("../../icons/sprite.svg#index-icon-alarm");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 33px 33px;
+    background-size: 34px 34px;
   }
 
   @media (--not-small-vp) {
@@ -110,19 +124,16 @@
       line-height: 280px;
       color: var(--grey-basic_background);
       z-index: -1;
-      left: 118px;
+      left: 115px;
       top: 0;
     }
   }
 }
 
 .technologies__description {
-  display: block;
   margin-left: 80px;
   width: 70%;
   margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 2px;
 
   @media (--not-small-vp) {
     margin-top: 150px;
@@ -133,4 +144,10 @@
   @media (--wide-vp) {
     width: 100%;
   }
+}
+
+.technologies__description-text {
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-top: 2px;
 }

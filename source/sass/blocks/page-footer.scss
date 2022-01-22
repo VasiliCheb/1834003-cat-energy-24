@@ -14,6 +14,14 @@
   @media (--not-small-vp) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 25px;
+    padding-bottom: 29px;
+  }
+}
+
+.page-footer__logo {
+  @media (--not-small-vp) {
+    margin-right: auto;
   }
 }
 
@@ -61,7 +69,7 @@
 
 .page-footer__contacts {
   @media (--wide-vp) {
-    margin-top: 98px;
+    margin-top: 95px;
     grid-row: 1 / -1;
     grid-column: 1 /-1;
     z-index: 2;
@@ -69,6 +77,17 @@
 }
 
 .page-footer__logo-link {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  padding: 10px;
+
+  @media (--not-small-vp) {
+    width: fit-content;
+    margin-left: -12px;
+    margin-top: 29px;
+  }
+
   &:focus {
     outline: 2px solid var(--black);
     outline-offset: 2px;
@@ -94,6 +113,6 @@
 }
 
 .page-footer__logo-title {
-  padding-top: 39px;
-  padding-bottom: 32px;
+  width: 130px;
+  height: auto;
 }

@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (--not-small-vp) {
+    margin-left: 3px;
+  }
 }
 
 .range__image-before {

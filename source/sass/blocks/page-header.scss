@@ -11,7 +11,8 @@
 
   @media (--wide-vp) {
     grid-template-columns: 1fr 1fr;
-    padding: 20px 0;
+    padding-top: 42px;
+    padding-bottom: 13px;
   }
 }
 
@@ -23,19 +24,7 @@
   padding-bottom: 12px;
 
   @media (--small-vp) {
-    position: relative;
     padding-right: 35px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 100%;
-      left: -20px;
-      bottom: 0;
-      background-color: var(--color-grey_border);
-      box-shadow: 40px 0 0 0 var(--color-grey_border);
-    }
   }
 }
 
@@ -67,11 +56,18 @@
 }
 
 .page-header__logo-link--title {
-  margin: 8px auto 0;
+  margin: 0 auto;
+  padding-top: 8px;
 
   @media (--not-small-vp) {
     padding-right: 0;
-    margin-left: 10px;
+    padding-top: 5px;
+    margin-left: 11px;
+  }
+
+  @media (--wide-vp) {
+    padding-top: 7px;
+    margin-left: 12px;
   }
 }
 
