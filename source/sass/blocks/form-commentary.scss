@@ -10,7 +10,7 @@
   font-size: 24px;
   line-height: 26px;
   color: var(--black);
-  margin-bottom: 38px;
+  margin-bottom: 37px;
   width: fit-content;
   --air-gap: 20px;
 
@@ -29,7 +29,7 @@
   @media (--not-small-vp) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    margin-bottom: 75px;
     --air-gap: 40px;
   }
 }
@@ -44,14 +44,14 @@
   text-transform: uppercase;
   width: 100%;
   min-height: 150px;
-  padding: 9px 12px 9px 15px;
+  padding: 9px 12px 9px 14px;
   border: 1px solid var(--color-form_border);
 
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
     min-height: 174px;
-    padding: 10px 20px;
+    padding: 10px 18px;
   }
 
   &:focus {

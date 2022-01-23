@@ -60,7 +60,7 @@
   @media (--wide-vp) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 }
 
@@ -144,6 +144,6 @@
   align-self: center;
 
   @media (--not-small-vp) {
-    margin-left: 20px;
+    margin-left: 18px;
   }
 }

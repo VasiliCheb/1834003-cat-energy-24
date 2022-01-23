@@ -47,6 +47,10 @@
   @media (--not-small-vp) {
     margin-right: 6px;
   }
+
+  @media (--wide-vp) {
+    margin-right: 8px;
+  }
 }
 
 .form-owner__list {
@@ -111,14 +115,29 @@
   border: 1px solid var(--color-form_border);
   margin-left: 10px;
   padding-left: 15px;
-  padding-right: 50px;
+  padding-right: 40px;
 
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
     height: 52px;
-    padding-left: 20px;
-    margin-left: 15px;
+
+    &--email {
+      padding-left: 20px;
+      margin-left: 19px;
+    }
+
+    &--phone {
+      padding-left: 17px;
+      margin-left: 15px;
+    }
+  }
+
+  @media (--wide-vp) {
+    &--email {
+      padding-left: 17px;
+      margin-left: 22px;
+    }
   }
 
   &:focus {
@@ -173,6 +192,10 @@
     width: 22px;
     height: 22px;
     margin-left: -36px;
+
+    @media (--not-small-vp) {
+      margin-left: -38px;
+    }
   }
 
   &--email::before {

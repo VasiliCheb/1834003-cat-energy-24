@@ -10,9 +10,11 @@
 }
 
 .form__button {
+  font-size: 16px;
+  line-height: 20px;
   width: 100%;
-  padding: 7px 45px;
-  margin-bottom: 20px;
+  padding: 10px 45px;
+  margin-bottom: 21px;
 
   @media (--not-small-vp) {
     font-size: 20px;

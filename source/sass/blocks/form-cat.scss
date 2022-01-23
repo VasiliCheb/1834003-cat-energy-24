@@ -4,7 +4,7 @@
   color: var(--grey-dark);
   text-transform: uppercase;
   border: none;
-  padding-bottom: 27px;
+  padding-bottom: 23px;
 
   @media (--not-small-vp) {
     font-size: 20px;
@@ -51,14 +51,15 @@
   height: 45px;
   border: 1px solid var(--color-form_border);
   margin-left: 15px;
-  padding: 0 15px;
+  padding: 0 14px;
   appearance: textfield;
 
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
     height: 52px;
-    padding: 0 20px;
+    padding: 0 18px;
+    margin-left: 19px;
   }
 
   &:focus {

@@ -8,7 +8,7 @@
   @media (--small-vp) {
     position: relative;
     border: none;
-    padding: 20px 0;
+    padding: 23px 0 19px;
 
     &::before {
       content: "";
@@ -36,7 +36,7 @@
   @media (--not-small-vp) {
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 28px;
+    padding: 25px 28px 23px 28px;
     border: 1px solid var(--color-form_border);
   }
 

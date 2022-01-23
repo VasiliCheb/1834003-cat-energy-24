@@ -15,7 +15,7 @@
   line-height: 36px;
   font-weight: 400;
   color: var(--black);
-  padding-top: 27px;
+  padding-top: 28px;
   margin-top: 0;
   margin-bottom: 37px;
 
@@ -23,6 +23,11 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 55px;
+    padding-top: 32px;
+  }
+
+  @media (--wide-vp) {
+    padding-top: 46px;
   }
 }
 
@@ -61,17 +66,17 @@
 }
 
 .form-selection__set--owner {
-  margin-top: 25px;
+  margin-top: 27px;
   margin-bottom: 24px;
 
   @media (--not-small-vp) {
-    margin-top: 75px;
-    margin-bottom: 65px;
+    margin-top: 76px;
+    margin-bottom: 66px;
   }
 
   @media (--wide-vp) {
     margin-top: 70px;
-    margin-bottom: 47px;
+    margin-bottom: 49px;
   }
 }
 
@@ -94,18 +99,18 @@
   @media (--wide-vp) {
     column-gap: 80px;
     grid-column: 1 / -1;
-    margin-bottom: 82px;
+    margin-bottom: 83px;
   }
 }
 
 .form-selection__commentary {
-  margin-bottom: 23px;
+  margin-bottom: 19px;
 
   @media (--not-small-vp) {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   @media (--wide-vp) {
-    margin-bottom: 67px;
+    margin-bottom: 63px;
   }
 }
