@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px 0 25px;
+  padding: 19px 0 25px;
   --top-indent: 84px;
 
   @media (--small-vp) {
@@ -20,11 +20,15 @@
   }
 
   @media (--not-small-vp) {
-    padding: 0 38px 40px;
+    padding: 8px 38px 39px;
 
     &:not(:last-child) {
       background-image: linear-gradient(to bottom, var(--white) var(--top-indent), var(--grey-basic_background) var(--top-indent));
     }
+  }
+
+  @media (--wide-vp) {
+    padding: 8px 37px 39px 39px;
   }
 
   &--more {
@@ -37,6 +41,7 @@
       background-color: var(--white);
       border: 2px solid var(--grey-basic_background);
       margin-top: var(--top-indent);
+      padding-bottom: 35px;
     }
   }
 }
@@ -71,12 +76,15 @@
     display: block;
     grid-column: 2 / -1;
     width: 60%;
-    margin-bottom: 14px;
+    margin-top: 1px;
+    margin-bottom: 13px;
 
     @media (--not-small-vp) {
       grid-column: 1 / -1;
       place-self: center;
       text-align: center;
+      margin-top: 2px;
+      margin-bottom: 13px;
     }
 
     @media (--wide-vp) {
@@ -94,7 +102,6 @@
     @media (--not-small-vp) {
       grid-column: 1 / -1;
       order: -1;
-      min-height: 245px;
     }
 
     &:focus {
@@ -127,7 +134,7 @@
 
   @media (--not-small-vp) {
     width: auto;
-    height: 240px;
+    height: 232px;
   }
 }
 
@@ -148,7 +155,7 @@
   &--more {
     position: relative;
     color: var(--black-light);
-    margin-top: 58px;
+    margin-top: 60px;
     margin-bottom: 8px;
 
     &::before,
@@ -160,7 +167,7 @@
       height: 2px;
       align-self: center;
       background-repeat: no-repeat;
-      bottom: 60px;
+      bottom: 58px;
       left: 50%;
       margin-left: -15px;
 
@@ -177,7 +184,7 @@
 
     @media (--not-small-vp) {
       line-height: 22px;
-      margin-top: 160px;
+      margin-top: 150px;
       margin-bottom: 23px;
     }
   }
@@ -195,7 +202,7 @@
   @media (--not-small-vp) {
     grid-column: 1 / -1;
     font-size: 16px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 }
 
@@ -206,8 +213,8 @@
 
   @media (--not-small-vp) {
     border-bottom: 1px solid var(--color-grey-special_border);
-    padding-top: 7px;
-    padding-bottom: 9px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 
@@ -233,7 +240,7 @@
   line-height: 16px;
   font-weight: 400;
   color: var(--grey-dark);
-  margin: 0 auto 21px;
+  margin: 0 auto 7px;
 
   @media (--middle-vp) {
     width: 80%;
@@ -242,7 +249,6 @@
   @media (--not-small-vp) {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: auto;
   }
 
   @media (--wide-vp) {

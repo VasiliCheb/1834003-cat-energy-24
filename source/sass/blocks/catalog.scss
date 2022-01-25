@@ -9,14 +9,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    margin-bottom: 68px;
+    margin-bottom: 69px;
   }
 
   @media (--wide-vp) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 80px;
-    row-gap: 60px;
-    margin-bottom: 75px;
+    column-gap: 76px;
+    row-gap: 63px;
+    margin-bottom: 78px;
   }
 }
